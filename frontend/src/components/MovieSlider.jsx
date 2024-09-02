@@ -10,6 +10,8 @@ const MovieSlider = ({ category }) => {
 	const [content, setContent] = useState([]);
 	const [showArrows, setShowArrows] = useState(false);
 
+	const url = "https://netflix-cl-beige.vercel.app"
+
 	const sliderRef = useRef(null);
 
 	const formattedCategoryName =
@@ -18,7 +20,7 @@ const MovieSlider = ({ category }) => {
 
 	useEffect(() => {
 		const getContent = async () => {
-			const res = await axios.get(`/api/v1/${contentType}/${category}`);
+			const res = await axios.get(`${url}/api/v1/${contentType}/${category}`);
 			setContent(res.data.content);
 		};
 
