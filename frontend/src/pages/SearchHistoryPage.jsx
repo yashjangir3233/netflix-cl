@@ -19,7 +19,7 @@ function formatDate(dateString) {
 	// Return the formatted date string
 	return `${month} ${day}, ${year}`;
 }
-const url = "https://netflix-cl-beige.vercel.app"
+const url = "https://netflix-cl-three.vercel.app"
 const SearchHistoryPage = () => {
 	const [searchHistory, setSearchHistory] = useState([]);
 

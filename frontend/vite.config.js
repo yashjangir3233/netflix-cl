@@ -7,7 +7,7 @@ export default defineConfig({
 	server: {
 		proxy: {
 			"/api": {
-				target: "https://netflix-cl-beige.vercel.app",
+				target: "https://netflix-cl-three.vercel.app",
 			},
 		},
 	},

@@ -10,7 +10,7 @@ const MovieSlider = ({ category }) => {
 	const [content, setContent] = useState([]);
 	const [showArrows, setShowArrows] = useState(false);
 
-	const url = "https://netflix-cl-beige.vercel.app"
+	const url = "https://netflix-cl-three.vercel.app"
 
 	const sliderRef = useRef(null);
 

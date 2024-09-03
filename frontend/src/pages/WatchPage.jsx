@@ -19,7 +19,7 @@ const WatchPage = () => {
 	const { contentType } = useContentStore();
 
 	const sliderRef = useRef(null);
-	const url = "https://netflix-cl-beige.vercel.app"
+	const url = "https://netflix-cl-three.vercel.app"
 	useEffect(() => {
 		const getTrailers = async () => {
 			try {

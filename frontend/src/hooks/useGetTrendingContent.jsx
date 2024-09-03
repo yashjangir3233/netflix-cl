@@ -5,7 +5,7 @@ import axios from "axios";
 const useGetTrendingContent = () => {
 	const [trendingContent, setTrendingContent] = useState(null);
 	const { contentType } = useContentStore();
-	const url = "https://netflix-cl-beige.vercel.app"
+	const url = "https://netflix-cl-three.vercel.app"
 	useEffect(() => {
 		const getTrendingContent = async () => {
 			const res = await axios.get(`${url}/api/v1/${contentType}/trending`);

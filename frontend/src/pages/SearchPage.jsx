@@ -19,7 +19,7 @@ const SearchPage = () => {
 		tab === "movie" ? setContentType("movie") : setContentType("tv");
 		setResults([]);
 	};
-	const url = "https://netflix-cl-beige.vercel.app"
+	const url = "https://netflix-cl-three.vercel.app"
 	const handleSearch = async (e) => {
 		e.preventDefault();
 		try {
