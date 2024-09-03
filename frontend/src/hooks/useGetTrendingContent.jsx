@@ -8,7 +8,9 @@ const useGetTrendingContent = () => {
 	const url = "https://netflix-cl-three.vercel.app"
 	useEffect(() => {
 		const getTrendingContent = async () => {
-			const res = await axios.get(`${url}/api/v1/${contentType}/trending`);
+			const res = await axios.get(`${url}/api/v1/${contentType}/trending`, {
+				withCredentials: true,
+			});
 			setTrendingContent(res.data.content);
 		};
 

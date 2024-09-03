@@ -7,6 +7,7 @@ export const fetchFromTMDB = async (url) => {
 			accept: "application/json",
 			Authorization: "Bearer " + ENV_VARS.TMDB_API_KEY,
 		},
+		withCredentials: true,
 	};
 
 	const response = await axios.get(url, options);
