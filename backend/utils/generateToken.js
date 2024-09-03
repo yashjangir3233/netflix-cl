@@ -9,7 +9,7 @@ export const generateTokenAndSetCookie = (userId, res) => {
 		httpOnly: true, // prevent XSS attacks cross-site scripting attacks, make it not be accessed by JS
 		sameSite: "none", // CSRF attacks cross-site request forgery attacks
 		secure: true,
-		domain:"https://netflix-cl-et9n.vercel.app"
+		domain:"netflix-cl-et9n.vercel.app"
 	});
 
 	return token;
